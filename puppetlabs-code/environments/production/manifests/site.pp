@@ -1,3 +1,0 @@
-node /agent/ {
-  include webserver
-}
