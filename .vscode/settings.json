@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    ".DS_Store": "explorerExcludedFiles",
+    ".vagrant": "explorerExcludedFiles",
+    "environments": "explorerExcludedFiles",
+    "puppetlabs-code/environments/production/manifests": "explorerExcludedFiles",
+    "puppetlabs-code/environments/production/modules": "explorerExcludedFiles"
+  }
+}
