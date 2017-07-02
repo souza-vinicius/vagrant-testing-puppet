@@ -1,5 +1,5 @@
 .DS_Store
 .vagrant
+.vscode
 environments
-puppetlabs-code/environments/production/manifests
-puppetlabs-code/environments/production/modules
+puppetlabs-code/
