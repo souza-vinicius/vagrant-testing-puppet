@@ -1,7 +1,11 @@
 class {
     'utilities' :
 }
+    
+if ($::hostname != 'ubuntu-agent') {
+    
+    class {
+        'vim' :
+    }
 
-class {
-    'vim' :
 }

@@ -4,16 +4,14 @@
 class vim {
 
     $username = 'vagrant'
-    $userpath = "/home/${username}/"
     $rootpath = "/root/"
-    
+
+    $userpath = "/home/${username}/"
     package { 'vim':
         ensure => present,        
     }
 
-
-
-    file { "${userpath}/.vim/" :
+    file { ["${userpath}/.vim/", "${rootpath}/.vim"] :
         ensure => directory,
         owner  => vagrant,
         group  => vagrant,
@@ -22,7 +20,7 @@ class vim {
         require => Package[ 'vim' ],
     }
 
-    file { "${userpath}/.vimrc" :
+    file { ["${userpath}/.vimrc", "${rootpath}/.vimrc"] :
         ensure => file,
         owner  => vagrant,
         group  => vagrant,

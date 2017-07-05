@@ -1,6 +1,6 @@
-class {
-    'puppetserver' :
-}
+# class {
+#     'puppetserver' :
+# }
 
 class {
     'utilities' :
